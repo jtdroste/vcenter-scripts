@@ -1,0 +1,8 @@
+# venv
+venv/
+
+# compiled python
+*.pyc
+
+# mac pls
+.DS_Store

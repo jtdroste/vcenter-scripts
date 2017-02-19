@@ -1,0 +1,3 @@
+while read line; do python2.7 clone_vm.py --host cdr-vcenter1.cse.buffalo.edu -u ad\\UBIT -p UBITPW --template GenCyber-GoldVM --vm-folder Camp_VMs --no-power-on --cluster INTEL --vm-name $line; done < list
+
+for i in `seq 1 18`; do python2.7 clone_vm.py --host cdr-vcenter1.cse.buffalo.edu -u ad\\UBIT -p UBITPW --template GenCyber-GoldVM --vm-folder Simulation_VMs --no-power-on --cluster INTEL --vm-name "Team_$i"; done
